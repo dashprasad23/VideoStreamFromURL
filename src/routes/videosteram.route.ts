@@ -20,7 +20,6 @@ class VideoStreamRoute {
     validateQueryParam(req: Request,res: Response,next: NextFunction) {
 
         const headers = req.headers;
-        //console.log(headers.range,"===========")
         const qparam = req.query as {url: string, size: string};
         const url:string = qparam.url;
         const size: number = parseInt(qparam.size);
