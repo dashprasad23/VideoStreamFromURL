@@ -2,9 +2,9 @@
   "name": "onepgrvideostreaming",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "start:dev": "NODE_ENV=developement nodemon ./dist/server.js",
+    "start:dev": "tsc && NODE_ENV=developement nodemon dist/server.js",
     "start:prod": "NODE_ENV=production node ./dist/server.js"
   },
   "author": "",
